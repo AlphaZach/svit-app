@@ -19,7 +19,7 @@ public class PrintableTest
           p.printAll();
           s.printAll();
         
-          System.out.println("---------------------");
+          System.out.println("----------------------");
           Printable1 pr;
           pr = p;
           pr.printAll();
