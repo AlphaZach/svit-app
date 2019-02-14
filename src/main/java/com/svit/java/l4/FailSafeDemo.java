@@ -18,11 +18,11 @@ public class FailSafeDemo {
         
         Iterator iterator = map.keySet().iterator();
         
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(map.get(iterator.next()));
-            map.put("B", "4");
+            map.put("D", "4");
+            map.remove("C");
         }
-
 	}
 
 }

@@ -11,7 +11,6 @@ import java.util.List;
  *
  */
 public class SimpleCollection {
-
 	public static void main(String[] args) {
 		List c;
 		c = new ArrayList();
@@ -22,5 +21,7 @@ public class SimpleCollection {
 		Iterator iter = c.iterator();
 		while (iter.hasNext())
 			System.out.println(iter.next());
+
+		System.out.println(c.size());
 	}
 }

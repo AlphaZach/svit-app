@@ -1,7 +1,56 @@
 -------- Java ----- Do your best to think and work on following
 ▪	Merge sort implementation
-▪	Quick sort implementation
+▪	Quick sort implementatio
 
+public static merge(string1, string2){
+	array result = new ArrayList();
+	Iterator str1_iter = string1.iterator();
+	Iterator str2_iter = string2.iterator();
+	for (int i = 0; i < string1.size()+string2.size(), i++){
+		if(str1_iter.peek()<str2_iter.peek()){
+			result.add(str1_iter.next());
+		} else {
+			result.add(str2_iter.next());
+		}
+	}
+	return result;
+}
+
+public static merge_sort(array list){
+	array result = new ArrayList()
+	if (list.size() >= 2){
+		left = list.left_half;
+		rigth = list.right_half;
+		merge_sort(left);
+		merge_sort(right);
+		result = merge(left);
+
+	} else {
+		return list;
+	}
+	return result
+}
+
+def mergesort(A):
+    if len(A) == 1:
+        return A;
+    SL = mergesort(A[:len(A)//2]);
+    SR = mergesort(A[len(A)//2:]);
+    S = merge(SL, SR);
+    return S
+
+def merge(SL, SR):
+    result = [];
+    while len(SL) != 0 and len(SR) != 0:
+        if SL[0] < SR[0]:
+            result.append(SL.pop(0));
+        else:
+            result.append(SR.pop(0));
+    if len(SL) == 0 and len(SR) != 0:
+        result.extend(SR);
+    if len(SR) == 0 and len(SL) != 0:
+        result.extend(SL);
+    return result;
 
 ----- Algorithm----- Please practice following algorithms via leetcode and/or eclipse with input example 
 ▪	Preorder , in order, postorder (recursive, iterative)
